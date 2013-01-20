@@ -8,13 +8,17 @@ Mandelbrot fractal viewer in HTML5 using WebGL and Shaders.
 
 ## Used Resources (Thanks!):
 [Shader Toy v0.4](http://www.iquilezles.org/apps/shadertoy/)
+
 [GETTING STARTED WITH THREE.JS](http://www.html5rocks.com/en/tutorials/three/intro/)
+
 [AN INTRODUCTION TO SHADERS](http://www.html5rocks.com/en/tutorials/webgl/shaders/)
 
 
 ## Used Libraries (Thanks!):
 [three.js](https://github.com/mrdoob/three.js/)
+
 [jQuery](http://jquery.com/)
+
 [jQuery Mouse Wheel Plugin](https://github.com/brandonaaron/jquery-mousewheel)
 
 
