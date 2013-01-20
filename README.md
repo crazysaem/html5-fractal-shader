@@ -1,10 +1,10 @@
 # [Demo](http://crazysaem.github.com/html5-fractal-shader/fractal.html)
 ------
-# Description:
+## Description:
 
 Mandelbrot fractal viewer in HTML5 using WebGL and Shaders.
 ------
-# License (MIT):
+## License (MIT):
 
 Copyright (c) 2013 Samuel Schneider
 
