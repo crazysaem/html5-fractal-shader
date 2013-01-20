@@ -1,4 +1,4 @@
-## [Live-Demo](http://crazysaem.github.com/html5-fractal-shader/fractal.html)
+## [Live-Demo](http://crazysaem.github.com/html5-fractal-shader/)
 
 
 ## Description:
