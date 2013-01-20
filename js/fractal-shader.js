@@ -105,7 +105,7 @@ $(document).ready(function()
 {
 	if (!Modernizr.webgl)
 	{
-	   var msg = "WebGL is needed to view this Page.<br>Please visit: <a href='get.webgl.org'>get.webgl.org</a>.";
+	   var msg = "WebGL is needed to view this Page.<br>Please visit: <a href='http://get.webgl.org'>get.webgl.org</a>.";
 	   $("#loading").html(msg);
 	   return;
 	}
