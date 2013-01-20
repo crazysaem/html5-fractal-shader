@@ -226,7 +226,7 @@ $(document).ready(function()
 	var mouseDownY;
 	
 	$("canvas")
-	.mousedown(function() {
+	.mousedown(function(event) {
 		xRight 	= uniforms.xRight.value;
 		xLeft  	= uniforms.xLeft.value;
 		yTop 	= uniforms.yTop.value;
