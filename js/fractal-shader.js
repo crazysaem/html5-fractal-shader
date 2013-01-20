@@ -47,6 +47,7 @@ var shader =
 	             	"	int breakLoop = 0;",
 	             	"	float check = 0.0;",
 	             	"	float color = 0.0;",
+	             	"	float color2 = 0.0;",
 	             	"",
 	             	"	for (int i=0; i<256; i++)",
 	             	"	{",
@@ -62,8 +63,18 @@ var shader =
 	             	"		}",
 	             	"	}",
 	             	"	",
-	             	"	color = 1.0 - color/256.0;",
-	             	"	gl_FragColor = vec4(0.0, 0.0, color, 1.0);",
+	             	"",
+	             	"	if (color>=128.0)",
+	             	"	{",
+	             	"		color = 128.0 - (color - 128.0);",
+	             	"	}",
+	             	"	",
+	             	"	if (color<=50.0)",
+	             	"	{",
+	             	"		color2 = color/16.0;",
+	             	"	}",
+	             	"	color = color/256.0;",
+	             	"	gl_FragColor = vec4(color, 0.0, color2, 1.0);",
 	             	"}"].join("\n")
 };
 
@@ -91,7 +102,14 @@ function setupScene()
 }
 
 $(document).ready(function()
-{	
+{
+	if (!Modernizr.webgl)
+	{
+	   var msg = "WebGL is needed to view this Page.<br>Please visit: <a href='get.webgl.org'>get.webgl.org</a>.";
+	   $("#loading").html(msg);
+	   return;
+	}
+	
 	var setup = setupScene();
 
 	// attach the render-supplied DOM element
@@ -141,6 +159,9 @@ $(document).ready(function()
 	    requestAnimFrame(update);
 	}
 	requestAnimFrame(update);
+	
+	$("#preview").css("display", "none");
+	$("#loading").css("display", "none");
 	
 	function zoom (clientX, clientY, zoomFactor)
 	{

@@ -21,6 +21,8 @@ Mandelbrot fractal viewer in HTML5 using WebGL and Shaders.
 
 [jQuery Mouse Wheel Plugin](https://github.com/brandonaaron/jquery-mousewheel)
 
+[Modernizr](http://modernizr.com/)
+
 
 ## License (MIT):
 
