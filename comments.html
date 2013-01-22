@@ -7,9 +7,14 @@
         <script>
         function sendcomment()
         {
-          comment = document.getElementById("comment").value;
+            comment = document.getElementById("comment").value;
         	
-        	document.getElementById('commentarea').innerHTML += comment + "<br>";
+        	document.getElementById('commentarea').innerHTML += 
+			'<p>TEXT</p>' +
+			'<div class="details">' +
+   			'<span id="commentuser">USERNAME said: </span> <span id="commenttime">INSERTTIME</span>' +
+   			'<a class="red" href="#" onclick="$(this).delete_comment("ID"); return false;"> Remove</a>' +
+			'</div>'
         	
         	//ajax hier einfügen
         }
@@ -23,5 +28,7 @@
         <textarea id="comment"></textarea>
         <br>
         <button onclick="sendcomment();">Send!</button>
+  
+
     </body>
 </html>
