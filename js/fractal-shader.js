@@ -121,7 +121,7 @@ $(document).ready(function()
 	var uniforms = {
 		coordinateTransform: {
 			type: "v2", 
-			value: new THREE.Vector2(600, 400)
+			value: new THREE.Vector2(WIDTH, HEIGHT)
 		},
 		xLeft: {
 			type: "f",
