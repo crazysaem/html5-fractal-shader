@@ -9,7 +9,7 @@ window.requestAnimFrame = (function(){
           };
 })();
 
-/*var HEIGHT = $("body").height();
+var HEIGHT = $("body").height();
 var WIDTH = $("body").width();
 
 
@@ -20,10 +20,7 @@ if (WIDTH >= HEIGHT * 1.5)
 else
 {
 	HEIGHT = WIDTH * 2/3;
-}*/
-
-var HEIGHT = 400;
-var WIDTH = HEIGHT * 1.5;
+}
 
 var shader = 
 {
@@ -124,7 +121,7 @@ $(document).ready(function()
 	var uniforms = {
 		coordinateTransform: {
 			type: "v2", 
-			value: new THREE.Vector2(WIDTH, HEIGHT)
+			value: new THREE.Vector2(600, 400)
 		},
 		xLeft: {
 			type: "f",
