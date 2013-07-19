@@ -9,8 +9,9 @@ window.requestAnimFrame = (function(){
           };
 })();
 
-var HEIGHT = $("body").height();
+/*var HEIGHT = $("body").height();
 var WIDTH = $("body").width();
+
 
 if (WIDTH >= HEIGHT * 1.5)
 {
@@ -19,7 +20,10 @@ if (WIDTH >= HEIGHT * 1.5)
 else
 {
 	HEIGHT = WIDTH * 2/3;
-}
+}*/
+
+var HEIGHT = 400;
+var WIDTH = HEIGHT * 1.5;
 
 var shader = 
 {
